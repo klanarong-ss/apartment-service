@@ -1,9 +1,9 @@
 version: '3.3'
 services:
-  authen-service: 
+  aprtmen-service: 
     hostname: aprtmen-service
     container_name: aprtmen-service
-    image: klanarong/aprtment-service:latest
+    image: klanarong/apartment-service:latest
     environment:
       - TZ=Asia/Bangkok
     ports:
