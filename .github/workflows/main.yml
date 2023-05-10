@@ -2,7 +2,7 @@ name: ci
 
 on:
   push:
-    branches: test
+    branches: dev
 
 jobs:
   build-container:
@@ -30,8 +30,9 @@ jobs:
           key: ${{secrets.SSH_KEY}}
           port: 22
           script: |
-            cd /home/work_space/apartment-service/
+            cd /home/work_space/
             git clone https://github.com/klanarong-ss/apartment-service.git
+            cd /home/work_space/apartment-service/
             git checkout test
             git pull
             docker pull klanarong/apartment-service:latest
