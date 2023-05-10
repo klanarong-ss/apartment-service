@@ -34,5 +34,5 @@ jobs:
             git clone https://github.com/klanarong-ss/apartment-service.git
             git checkout test
             git pull
-            docker pull klanarong/authentication-service:latest
+            docker pull klanarong/apartment-service:latest
             docker-compose up -d --force-recreate
