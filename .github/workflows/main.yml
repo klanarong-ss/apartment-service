@@ -2,7 +2,7 @@ name: ci
 
 on:
   push:
-    branches: dev
+    branches: test
 
 jobs:
   build-container:
@@ -33,7 +33,7 @@ jobs:
             cd /home/work_space/
             git clone https://github.com/klanarong-ss/apartment-service.git
             cd /home/work_space/apartment-service/
-            git checkout dev
+            git checkout test
             git pull
             docker pull klanarong/apartment-service:latest
             docker-compose up -d --force-recreate

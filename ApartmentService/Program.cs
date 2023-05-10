@@ -31,6 +31,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseSwagger();
+app.UseSwaggerUI();
+
 // global cors policy
 app.UseCors(x => x
     .AllowAnyOrigin()
